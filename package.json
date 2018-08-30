@@ -4,7 +4,8 @@
   "description": "Practice project for front-end ability",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server"
   },
   "author": "",
   "license": "MIT",
@@ -24,5 +25,8 @@
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "animejs": "^2.2.0"
   }
 }
