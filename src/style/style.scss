@@ -14,32 +14,29 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
-#canva {
+#BG {
     width: 100%; height: 100%;
-    background: rgb(35, 36, 46);
+    background: #ededed;
 
-    .lineContain {
-        width: 300px;
-        height: 90px;
-        position: relative;
-        @include center;
-        clip-path: inset(0 100% 0 0);
-        animation: line 1s infinite cubic-bezier(0.8, 0, 0, 1);
-        img {
+    .animation-container {
+        width: 775px; height: 540px;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
+        .dot {
             position: absolute;
-            width: 100%;
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background-color: #333;
+            top: 265px; left: 232.5px;
+        }
+        .hexgon {
+            width: 300px;
+            @include center;
+            img {
+                width: 100%;
+            }
         }
     }
 
 
-}
-
-@keyframes line {
-    0% {
-
-        clip-path: inset(0 100% 0 0);
-    }
-    100% {
-        clip-path: inset(0 0 0 0);
-    }
 }
